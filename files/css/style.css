@@ -12528,10 +12528,6 @@ blockquote {
     padding-left: 15px;
   }
 
-  .banner-section.home-3-banner {
-    padding-bottom: 70px;
-  }
-
   .section.blue-map {
     height: 380px;
   }
@@ -13627,6 +13623,7 @@ a.nav-item-title {
 .sidr ul li {
   border-bottom: 1px solid #fff;
   border-top: none;
+  text-align: center;
 }
 
 .sidr ul li:last-child {
@@ -13671,7 +13668,48 @@ a.nav-item-title {
 }
 
 @media screen and (max-width: 991px) {
+  .banner-section.home-3-banner {
+    padding-bottom: 70px;
+  }
+
   .section-custom-mobile {
     padding-bottom: 60px;
+  }
+
+  .book-wrapper-custom-t {
+    flex-direction: column;
+  }
+
+  .left-book-wrap-custom-t {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  .right-book-wrap-custom-t {
+    height: auto;
+    width: 100%;
+  }
+
+  .book-form-custom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .get-a-free-wrap-t {
+    margin: 0 auto;
+  }
+
+  .jot-form-container {
+    max-width: 599px;
+    margin: 0 auto;
+  }
+
+  .subtitle-container {
+    justify-content: center;
+  }
+
+  .title-book-form-custom {
+    text-align: center;
   }
 }
