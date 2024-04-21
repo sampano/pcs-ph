@@ -4715,6 +4715,9 @@ blockquote {
   bottom: auto;
   left: 0%;
   right: 0%;
+  position: sticky;
+  /* transform: translateY(0) ; */
+  transition: transform 0.3s ease;
 }
 
 .slide-nav {
@@ -6133,7 +6136,7 @@ blockquote {
   grid-row-gap: 40px;
   flex-wrap: wrap;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -6160,9 +6163,10 @@ blockquote {
   height: 220px;
   border: 2px solid #d563e3;
   border-radius: 50%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .left-arrow-clients {
@@ -10610,7 +10614,7 @@ blockquote {
 
   .home-team-member-wrapper {
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .left-arrow-clients {
@@ -13601,7 +13605,7 @@ a.nav-item-title {
   }
 
   .navbar-absolute {
-    position: static;
+    position: sticky;
   }
 }
 
@@ -13664,7 +13668,15 @@ a.nav-item-title {
 }
 
 .navbar-fixed {
-  position: fixed;
+  position: sticky;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-show {
+  transform: translateY(0);
 }
 
 @media screen and (max-width: 991px) {
@@ -13711,5 +13723,31 @@ a.nav-item-title {
 
   .title-book-form-custom {
     text-align: center;
+  }
+
+  .mobile-nav-container {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar-absolute {
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .home-services-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .section-services-mobile {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-contact-us-mobile {
+    padding-top: 0;
   }
 }

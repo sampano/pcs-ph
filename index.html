@@ -45,16 +45,13 @@
   </head>
   <body>
     <div
-      class="navbar-absolute w-nav"
+      class="navbar-absolute w-nav navbar-fixed"
       style="will-change: background; background-color: rgb(240, 249, 245)"
       id="navbar"
     >
       <div class="nav-container w-container">
         <div class="nav-menu-wrapper justify-start">
-          <a
-            href="https://cleaning-w-wcopilot.webflow.io/home-1"
-            aria-current="page"
-            class="brand w-nav-brand w--current"
+          <a href="#" aria-current="page" class="brand w-nav-brand w--current"
             ><img
               src="./files/media/logo/PCS-LOGO.png"
               loading="lazy"
@@ -73,7 +70,7 @@
                     class="nav-dropdown-icon w-icon-dropdown-toggle"
                     aria-hidden="true"
                   ></div>
-                  <p class="nav-item-title">HOME</p>
+                  <a href="#" class="nav-item-title">HOME</a>
                 </div>
               </div>
               <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
@@ -82,16 +79,22 @@
                     class="nav-dropdown-icon w-icon-dropdown-toggle"
                     aria-hidden="true"
                   ></div>
-                  <a href="#" class="nav-item-title">ABOUT</a>
+                  <a href="#about" class="nav-item-title">ABOUT</a>
                 </div>
               </div>
-              <a href="" class="nav-link w-nav-link" style="max-width: 1200px"
-                >SERVICES</a
-              >
+              <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div
+                    class="nav-dropdown-icon w-icon-dropdown-toggle"
+                    aria-hidden="true"
+                  ></div>
+                  <a href="#services" class="nav-item-title">SERVICES</a>
+                </div>
+              </div>
             </div>
-            <div class="button-nav-tablet">
-              <a href="#" class="primary-button w-button">Let's Talk</a>
-            </div>
+            <!-- <div class="button-nav-tablet">
+              <a href="tel:+639266395293" class="primary-button w-button">Let's Talk</a>
+            </div> -->
           </nav>
           <nav class="mobile-nav">
             <a
@@ -105,11 +108,11 @@
             <div id="sidr" class="">
               <ul>
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li class="active"><a href="#mobile-about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li>
                   <a
-                    href="#"
+                    href="tel:+639266395293"
                     class="secondary-button w-button secondary-button-white mobile-button-custom"
                     >Let's Talk</a
                   >
@@ -131,16 +134,14 @@
           </div>
         </div>
         <div class="button-nav-wrapper">
-          <a
-            href="https://cleaning-w-wcopilot.webflow.io/contact-us"
-            class="primary-button w-button"
+          <a href="tel:+639266395293" class="primary-button w-button"
             >Let's Talk</a
           >
         </div>
       </div>
       <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </div>
-    <div class="banner-section home-3-banner">
+    <div class="banner-section home-3-banner" id="home">
       <div class="base-container w-container">
         <div class="home-banner-bottom">
           <div class="home-banner-content">
@@ -247,7 +248,7 @@
         </div>
       </div>
     </div>
-    <div class="section light-background">
+    <div class="section light-background" id="testimonials">
       <div class="base-container w-container base-container-mobile">
         <div
           class="home-3-testimonials-slider w-slider"
@@ -473,10 +474,13 @@
         />
       </div>
     </div>
-    <div class="section with-green-bg about-us-section section-mobile">
+    <div
+      class="section with-green-bg about-us-section section-mobile"
+      id="about"
+    >
       <div class="base-container w-container">
         <div class="book-wrapper">
-          <div class="left-book-wrap left-book-wrap-mobile">
+          <div class="left-book-wrap left-book-wrap-mobile" id="mobile-about">
             <div class="home-services-content">
               <h6
                 style="
@@ -525,7 +529,7 @@
                 class="button-block-wrapper"
               >
                 <a
-                  href="/our-services"
+                  href="#services"
                   class="secondary-button w-button secondary-button-white"
                   >Our Services</a
                 >
@@ -757,7 +761,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section section-services-mobile" id="services">
       <div class="base-container w-container">
         <div class="section-title-wrapper">
           <h6
@@ -1147,7 +1151,7 @@
       </div>
     </div>
 
-    <div class="section with-blue-bg">
+    <div class="section with-blue-bg section-contact-us-mobile" id="contact-us">
       <div class="base-container w-container">
         <div class="book-wrapper book-wrapper-custom book-wrapper-custom-t">
           <div
@@ -1280,7 +1284,7 @@
           >
             <div class="home-team-member-block">
               <img
-                src="./files/media/images/team_member_01.webp"
+                src="./files/media/images/member-avatar-01.webp"
                 loading="lazy"
                 sizes="216px"
                 alt="member team"
@@ -1313,13 +1317,13 @@
                 >
               </div>
             </div>
-            <h4>Raul Simmons</h4>
-            <p class="paragraph-no-margin">Team Lead</p>
+            <h4>Samuel Pano</h4>
+            <p class="paragraph-no-margin">CEO</p>
           </div>
           <div class="home-team-member-item">
             <div class="home-team-member-block">
               <img
-                src="./files/media/images/team_member_02.webp"
+                src="./files/media/images/member-avatar-03.webp"
                 loading="lazy"
                 sizes="216px"
                 alt="member team"
@@ -1352,13 +1356,13 @@
                 >
               </div>
             </div>
-            <h4>Sophie Chang</h4>
-            <p class="paragraph-no-margin">Deep Cleaning Expert</p>
+            <h4>Jerome Sumilla</h4>
+            <p class="paragraph-no-margin">COO</p>
           </div>
           <div class="home-team-member-item">
             <div class="home-team-member-block">
               <img
-                src="./files/media/images/team_member_03.webp"
+                src="./files/media/images/Eliz-Irene-Gemeniano-Pano.jpg"
                 loading="lazy"
                 sizes="216px"
                 alt="member team"
@@ -1391,47 +1395,8 @@
                 >
               </div>
             </div>
-            <h4>Carlos Ramirez</h4>
-            <p class="paragraph-no-margin">Client Relations Specialist</p>
-          </div>
-          <div class="home-team-member-item">
-            <div class="home-team-member-block">
-              <img
-                src="./files/media/images/team_member_04.webp"
-                loading="lazy"
-                sizes="216px"
-                alt="member team"
-                class="home-team-photo"
-              />
-              <div
-                class="home-team-social"
-                style="
-                  opacity: 1;
-                  transform: translate3d(0px, 70px, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                "
-              >
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  class="team-icon"
-                  ></a
-                ><a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="team-icon"
-                  ></a
-                ><a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  class="team-icon last-child"
-                  ></a
-                >
-              </div>
-            </div>
-            <h4>Theresa Nguyen</h4>
-            <p class="paragraph-no-margin">Sales Manager</p>
+            <h4>Eliz Irene Gemeniano-Pano</h4>
+            <p class="paragraph-no-margin">Operations Manager</p>
           </div>
         </div>
       </div>
@@ -1478,39 +1443,19 @@
               Extra links
             </h5>
             <div class="footer-links-wrap">
-              <a
-                href="https://cleaning-w-wcopilot.webflow.io/home-1"
-                aria-current="page"
-                class="footer-link w--current"
+              <a href="#" aria-current="page" class="footer-link w--current"
                 >Home</a
-              ><a
-                href="https://cleaning-w-wcopilot.webflow.io/about-us"
-                class="footer-link"
-                >About Us</a
-              ><a
-                href="https://cleaning-w-wcopilot.webflow.io/our-services"
-                class="footer-link"
-                >Services</a
-              >
+              ><a href="#about" class="footer-link">About Us</a
+              ><a href="#services" class="footer-link">Services</a>
             </div>
           </div>
           <div class="footer-links-wrapper text-align-left-half-width">
             <h5 class="text-color-white footer-margin-bottom-small">
               Useful links
             </h5>
-            <a
-              href="https://cleaning-w-wcopilot.webflow.io/pricing-1"
-              class="footer-link"
-              >Our Pricing</a
-            ><a
-              href="https://cleaning-w-wcopilot.webflow.io/contact-us"
-              class="footer-link"
-              >Contact Us</a
-            ><a
-              href="https://cleaning-w-wcopilot.webflow.io/testimonials"
-              class="footer-link"
-              >Testimonials</a
-            >
+            <a href="#contact-us" class="footer-link">Our Pricing</a
+            ><a href="#contact-us" class="footer-link">Contact Us</a
+            ><a href="#testimonials" class="footer-link">Testimonials</a>
           </div>
           <div class="footer-links-large-wrapper">
             <h5 class="text-color-white footer-margin-bottom-small">
@@ -1535,7 +1480,7 @@
               </p>
               <p class="footer-links">
                 <span class="footer-contacts-icon"></span>
-                <a href="mailto:information@office.com" class="footer-link"
+                <a href="mailto:pcs-ph@outlook.com" class="footer-link"
                   >pcs-ph@outlook.com</a
                 >
               </p>
@@ -1574,6 +1519,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.1/jquery.smooth-scroll.min.js"
+      integrity="sha512-HbygMe6Ckx5qvr4vcpkuJZNG4+VwsDNub1h6QNgaeR7DSJwk2ZiCQsxgy3Fi7UWiWiTVlzwAa86ILdltKhWtYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
       $(document).ready(function () {
         $("#simple-menu").sidr({
@@ -1599,16 +1550,33 @@
             });
           },
         });
+        $("#sidr a").on("click", function () {
+          $.sidr("close", "sidr"); // Close the Sidr menu
+        });
       });
+
+      var scrollTimeout;
+
       window.addEventListener("scroll", function () {
         var navbar = document.getElementById("navbar");
         var scrollPosition = window.scrollY;
 
-        // Determine when to fix the navbar
+        // Add the navbar-fixed class when scrolling
         if (scrollPosition > 0) {
-          navbar.classList.add("navbar-fixed");
+          //navbar.classList.add("navbar-fixed");
+          navbar.style.transform = "translateY(-100%)";
+          // Clear any existing scrollTimeout
+          clearTimeout(scrollTimeout);
+
+          // Set a timeout to remove the navbar-fixed class after scrolling stops
+          scrollTimeout = setTimeout(function () {
+            //navbar.classList.remove("navbar-fixed");
+
+            navbar.style.transform = "translateY(0)";
+          }, 800); // Adjust the timeout value (in milliseconds) as needed
         } else {
           navbar.classList.remove("navbar-fixed");
+          navbar.style.transform = "translateY(0)";
         }
       });
     </script>
