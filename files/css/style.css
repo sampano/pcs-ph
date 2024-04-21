@@ -13679,6 +13679,10 @@ a.nav-item-title {
   transform: translateY(0);
 }
 
+.footer-link-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .banner-section.home-3-banner {
     padding-bottom: 70px;
@@ -13749,5 +13753,13 @@ a.nav-item-title {
 
   .section-contact-us-mobile {
     padding-top: 0;
+  }
+
+  .footer-link-desktop {
+    display: none;
+  }
+
+  .footer-link-mobile {
+    display: block;
   }
 }
