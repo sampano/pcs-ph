@@ -1625,16 +1625,14 @@
           $.ajax({
             type: "POST",
             url: "https://formsubmit.co/samuelpano@gmail.com",
-            data: formData,
             dataType: "json",
-            success: function (response) {
-              // Display thank you modal upon successful submission
-              $("#thankYouModal").css("display", "block");
+            accepts: "application/json",
+            data: {
+              name: "FormSubmit",
+              message: "I'm from Devro LABS",
             },
-            error: function (error) {
-              console.log("AJAX Error:", status, error);
-              // Handle error if needed
-            },
+            success: (data) => console.log(data),
+            error: (err) => console.log(err),
           });
         });
       });
