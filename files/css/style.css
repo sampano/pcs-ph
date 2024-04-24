@@ -4718,6 +4718,7 @@ blockquote {
   position: sticky;
   /* transform: translateY(0) ; */
   transition: transform 0.3s ease;
+  z-index: 9;
 }
 
 .slide-nav {
@@ -13796,4 +13797,54 @@ a.nav-item-title {
   .footer-link-mobile {
     display: block;
   }
+}
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.loader-gif {
+  /* Optionally, you can style the loader gif here */
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+}
+
+.body-overlay {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  height: 1000%;
+  background: #fff;
+  z-index: 99;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translate(5px, 0);
+  }
+}
+
+/* Apply the animation to the image with a duration and infinite loop */
+.loader-image {
+  animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  display: block;
+  width: 70px;
 }

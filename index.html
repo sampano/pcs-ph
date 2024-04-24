@@ -77,6 +77,15 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div class="spinner">
+      <img class="loader-image" src="./files/media/images/loading-image.png" />
+      <img
+        src="./files/media/video/loading-gif.gif"
+        class="loader-gif"
+        alt="gif loader"
+      />
+    </div>
+    <div class="body-overlay"></div>
     <div
       class="navbar-absolute w-nav navbar-fixed"
       style="will-change: background; background-color: rgb(240, 249, 245)"
@@ -738,7 +747,7 @@
             "
             class="home-feature-item mb-0"
           >
-            <div class="home-features-item-number">300+</div>
+            <div class="home-features-item-number">100+</div>
             <h6 class="text-white">Projects</h6>
           </div>
           <div
@@ -762,7 +771,7 @@
             "
             class="home-feature-item mb-0"
           >
-            <div class="home-features-item-number">10k+</div>
+            <div class="home-features-item-number">100+</div>
             <h6 class="text-white">Clients</h6>
           </div>
           <div
@@ -774,7 +783,7 @@
             "
             class="home-feature-item mb-0"
           >
-            <div class="home-features-item-number">24+</div>
+            <div class="home-features-item-number">6+</div>
             <h6 class="text-white">Years Experience</h6>
           </div>
         </div>
@@ -1637,5 +1646,16 @@
         });
       });
     </script> -->
+    <script>
+      $(document).ready(function () {
+        function hideLoader() {
+          $(".spinner").fadeOut(300); // Fade out the spinner/loader
+          $(".body-overlay").fadeOut(800); // Fade out the overlay
+        }
+        $(window).on("load", function () {
+          hideLoader(); // Call the hideLoader function
+        });
+      });
+    </script>
   </body>
 </html>
