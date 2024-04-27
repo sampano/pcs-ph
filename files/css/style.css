@@ -13699,15 +13699,35 @@ a.nav-item-title {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
+
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 150px 50px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   animation-name: modalopen;
   animation-duration: 0.4s;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  width: 25px;
+  height: 25px;
+  background-color: #0079b2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
 }
 @keyframes modalopen {
   from {
@@ -13718,6 +13738,9 @@ a.nav-item-title {
   }
 }
 
+.modal.show-modal {
+  display: block;
+}
 @media screen and (max-width: 991px) {
   .banner-section.home-3-banner {
     padding-bottom: 70px;
@@ -13847,4 +13870,113 @@ a.nav-item-title {
   animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
   display: block;
   width: 70px;
+}
+
+.contact-form input {
+  font-size: 16px;
+  font-family: open sans, sans-serif;
+  padding: 10px;
+  height: 52px;
+  width: 100%;
+  max-width: 475px;
+  border-radius: 15px;
+  border: none;
+}
+
+.contact-form select {
+  font-size: 16px;
+  font-family: open sans, sans-serif;
+  padding: 10px;
+  height: 52px;
+  width: 100%;
+  max-width: 475px;
+  border-radius: 15px;
+  border: none;
+}
+
+.contact-form textarea {
+  font-size: 16px;
+  font-family: open sans, sans-serif;
+  padding: 10px;
+  height: 250px;
+  width: 100%;
+  /* max-width: 475px; */
+  border-radius: 15px;
+  border: none;
+}
+
+.contact-form label {
+  text-align: left;
+}
+.contact-form .customer-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form .customer-name .name-container {
+  width: 100%;
+}
+
+.contact-form .button-container {
+  text-align: left;
+}
+.contact-form button {
+  border: 1px solid #fff;
+  background-color: var(--btn-primary);
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  position: relative;
+  border-radius: 14px;
+  font-weight: 700;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #85ca43;
+}
+
+.section.booking {
+  padding-top: 20px;
+}
+
+.section.booking .left-book-wrap-custom {
+  background: url("./files/media/images/about_us_image.webp");
+}
+@media screen and (max-width: 479px) {
+  .contact-form .customer-name {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .our-services-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal-content {
+    padding: 100px 20px;
+  }
+
+  .contact-form .button-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .section.booking {
+    padding-top: 0;
+  }
+
+  .section.booking .book-wrapper-custom-t {
+    flex-direction: column-reverse;
+  }
 }
