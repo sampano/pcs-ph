@@ -43,6 +43,7 @@
       sizes="180x180"
       href="./files/media/favicon/apple-touch-icon.png"
     />
+    <link rel="icon" href="./files/media/favicon/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
@@ -87,7 +88,6 @@
       })(window, document, "script", "dataLayer", "GTM-N5GR9D8G");
     </script>
     <!-- End Google Tag Manager -->
-    
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -189,7 +189,9 @@
                   <a href="#services" class="services-link-mobile">Services</a>
                 </li>
                 <li>
-                  <a href="#contact-us" class="services-link-mobile">Contact Us</a>
+                  <a href="#contact-us" class="services-link-mobile"
+                    >Contact Us</a
+                  >
                 </li>
                 <li>
                   <a
@@ -1284,62 +1286,115 @@
                       id=""
                       style="display: none"
                     />
-                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                    <input
+                      type="hidden"
+                      name="recaptcha_response"
+                      id="recaptchaResponse"
+                    />
                     <!-- Custom Form Data -->
                     <div class="customer-name">
-                    <div class="name-container">
-                    <label for="firstName">First Name*</label>
-                    <input type="text" name="firstName" id="" required placeholder="First Name" />
-                    </div>
-                    <div class="name-container">
-                    <label for="lastName">Last Name*</label>
-                    <input type="text" name="lastName" id="" required  placeholder="Last Name"/>
-                    </div>
-                    </div>
-                    <div class="customer-name">
-                    <div class="name-container">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email" id="" required placeholder="Email"/>
-                    </div>
-                    <div class="name-container">
-                    <label for="phone">Mobile Number*</label>
-                    <input type="tel" name="phone" required placeholder="Mobile Number"/>
-                    </div>
-                    </div>
-                    <div class="customer-name">
-                    <div class="name-container">                    
-                    <label for="services">Services*</label>
-                    <select class="" name="services" id="services" required>
-                      <option value="">Select Services</option>
-                      <option value="Bed Assembly">Bed Assembly</option>
-                      <option value="Blinds Shampooing">Blinds Shampooing</option>
-                      <option value="Building Pipes Declogging">Building Pipes Declogging</option>
-                      <option value="Carpet Shampooing">Carpet Shampooing</option>
-                      <option value="Disinfection">Disinfection</option>
-                      <option value="Floor Buffing">Floor Buffing</option>
-                      <option value="Floor Polishing">Floor Polishing</option>
-                      <option value="General Cleaning">General Cleaning</option>
-                      <option value="Office Cleaning">Office Cleaning</option>
-                      <option value="One-Time Cleaning">One-Time Cleaning</option>
-                      <option value="Painting">Painting</option>
-                      <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
-                      <option value="Posting of Personnel">Posting of Personnel</option>
-                      <option value="Restroom Cleaning">Restroom Cleaning</option>
-                      <option value="Sofa Shampooing">Sofa Shampooing</option>
-                      <option value="Waxing (Vinyl)">Waxing (Vinyl)</option>
-                      
-                      </select>
-                    </div>
-                    <div class="name-container"></div>
+                      <div class="name-container">
+                        <label for="firstName">First Name*</label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          id=""
+                          required
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="name-container">
+                        <label for="lastName">Last Name*</label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          id=""
+                          required
+                          placeholder="Last Name"
+                        />
+                      </div>
                     </div>
                     <div class="customer-name">
-                    <div class="name-container">
-                    <label for="message">Message*</label>
-                    <textarea name="message" id="message" required placeholder="Message"></textarea>
+                      <div class="name-container">
+                        <label for="email">Email*</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id=""
+                          required
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="name-container">
+                        <label for="phone">Mobile Number*</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          required
+                          placeholder="Mobile Number"
+                        />
+                      </div>
                     </div>
+                    <div class="customer-name">
+                      <div class="name-container">
+                        <label for="services">Services*</label>
+                        <select class="" name="services" id="services" required>
+                          <option value="">Select Services</option>
+                          <option value="Bed Assembly">Bed Assembly</option>
+                          <option value="Blinds Shampooing">
+                            Blinds Shampooing
+                          </option>
+                          <option value="Building Pipes Declogging">
+                            Building Pipes Declogging
+                          </option>
+                          <option value="Carpet Shampooing">
+                            Carpet Shampooing
+                          </option>
+                          <option value="Disinfection">Disinfection</option>
+                          <option value="Floor Buffing">Floor Buffing</option>
+                          <option value="Floor Polishing">
+                            Floor Polishing
+                          </option>
+                          <option value="General Cleaning">
+                            General Cleaning
+                          </option>
+                          <option value="Office Cleaning">
+                            Office Cleaning
+                          </option>
+                          <option value="One-Time Cleaning">
+                            One-Time Cleaning
+                          </option>
+                          <option value="Painting">Painting</option>
+                          <option value="Post-Construction Cleaning">
+                            Post-Construction Cleaning
+                          </option>
+                          <option value="Posting of Personnel">
+                            Posting of Personnel
+                          </option>
+                          <option value="Restroom Cleaning">
+                            Restroom Cleaning
+                          </option>
+                          <option value="Sofa Shampooing">
+                            Sofa Shampooing
+                          </option>
+                          <option value="Waxing (Vinyl)">Waxing (Vinyl)</option>
+                        </select>
+                      </div>
+                      <div class="name-container"></div>
+                    </div>
+                    <div class="customer-name">
+                      <div class="name-container">
+                        <label for="message">Message*</label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          required
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
                     </div>
                     <div class="button-container">
-                    <button type="submit">Submit</button>
+                      <button type="submit">Submit</button>
                     </div>
 
                     <div id="result"></div>
@@ -1722,9 +1777,9 @@
       });
     </script>
     <script src="./files/js/smoothScroll.js"></script>
-<!-- Recaptcha v3 -->
+    <!-- Recaptcha v3 -->
 
-<!-- <script src="https://www.google.com/recaptcha/api.js?render=6Le65sgpAAAAAIowm5xB3XudUvGcev-pe5DPU4Ja"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Le65sgpAAAAAIowm5xB3XudUvGcev-pe5DPU4Ja"></script>
 <script>
     grecaptcha.ready(function () {
         grecaptcha.execute('6Le65sgpAAAAAIowm5xB3XudUvGcev-pe5DPU4Ja', {
@@ -1762,7 +1817,7 @@
             let json = await response.json();
             if (response.status == 200) {
               result.innerHTML = json.message;
-              $("#thankYouModal").fadeIn(300)
+              $("#thankYouModal").fadeIn(300);
             } else {
               console.log(response);
               result.innerHTML = json.message;
@@ -1793,18 +1848,18 @@
         });
       });
     </script>
-    <script>$(document).ready(function() {
-      // Function to close the modal
-      function closeModal() {
-        $('#thankYouModal').fadeOut(300); // Remove 'open' class to hide the modal
-      }
-         
-      // Optional: Close modal when the 'Close' button is clicked
-      $('#thankYouModal .close-btn').on('click', function() {
-        closeModal(); // Close the modal
+    <script>
+      $(document).ready(function () {
+        // Function to close the modal
+        function closeModal() {
+          $("#thankYouModal").fadeOut(300); // Remove 'open' class to hide the modal
+        }
+
+        // Optional: Close modal when the 'Close' button is clicked
+        $("#thankYouModal .close-btn").on("click", function () {
+          closeModal(); // Close the modal
+        });
       });
-  
-    });
     </script>
   </body>
 </html>
