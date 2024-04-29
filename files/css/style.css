@@ -1304,7 +1304,7 @@ textarea.w-select {
 .w-slider-mask {
   z-index: 1;
   height: 100%;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   display: block;
   position: relative;
   left: 0;
@@ -4718,7 +4718,7 @@ blockquote {
   position: sticky;
   /* transform: translateY(0) ; */
   transition: transform 0.3s ease;
-  z-index: 9;
+  z-index: 9999;
 }
 
 .slide-nav {
@@ -5210,6 +5210,19 @@ blockquote {
   font-family: "Fa solid 900", sans-serif;
   font-size: 28px;
   line-height: 40px;
+  position: absolute;
+  bottom: 15%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .home-arrow-icon {
+    bottom: 5%;
+  }
+}
+
+.home-arrow-icon.next-button.slick-arrow {
+  left: 50px;
 }
 
 .home-right-arrow {
@@ -5227,7 +5240,7 @@ blockquote {
   font-size: 120px;
   line-height: 1;
   position: absolute;
-  top: -50px;
+  top: -22px;
   bottom: auto;
   left: 20px;
   right: auto;
@@ -8103,8 +8116,8 @@ blockquote {
 }
 
 .footer-icon-links:hover {
-  border-color: var(--secondary);
-  background-color: var(--secondary);
+  /* border-color: #85ca43; */
+  background-color: #85ca43;
 }
 
 .footer-social-icons-wrapper {
@@ -10366,7 +10379,7 @@ blockquote {
   }
 
   .home-3-testimonials-mask {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 
@@ -10402,7 +10415,7 @@ blockquote {
   }
 
   .home-testimonials {
-    width: 80%;
+    width: 100%;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     flex-wrap: wrap;
@@ -13712,7 +13725,6 @@ a.nav-item-title {
   position: relative;
   text-align: center;
   border-radius: 15px;
-  max-width: 800px;
 }
 
 .close-btn {
@@ -13741,6 +13753,7 @@ a.nav-item-title {
 .modal.show-modal {
   display: block;
 }
+
 @media screen and (max-width: 991px) {
   .banner-section.home-3-banner {
     padding-bottom: 70px;
@@ -13948,9 +13961,35 @@ a.nav-item-title {
   padding-top: 20px;
 }
 
-.section.booking .left-book-wrap-custom {
-  background: url("./files/media/images/about_us_image.webp");
+.section.booking h1 {
+  color: #fff;
 }
+
+.section.booking .left-book-wrap-custom {
+  background-image: url("../media/images/about_us_image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.section.booking .header-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section.booking .button-container {
+  text-align: center;
+}
+
+.section.booking .primary-button {
+  padding: 20px 50px;
+  font-size: 18px;
+}
+
+.section.booking .primary-button:hover {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 479px) {
   .contact-form .customer-name {
     padding: 0 20px;
@@ -13974,9 +14013,19 @@ a.nav-item-title {
 
   .section.booking {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .section.booking .book-wrapper-custom-t {
     flex-direction: column-reverse;
+  }
+
+  .section.booking .left-book-wrap-custom {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .section.booking .header-container {
+    padding-bottom: 20px;
   }
 }
