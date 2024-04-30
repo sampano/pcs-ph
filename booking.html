@@ -321,14 +321,6 @@
                   </form>
                 </div>
               </div>
-
-              <!-- <script src="https://form.jotform.com/s/umd/latest/for-form-embed-handler.js"></script>
-              <script>
-                window.jotformEmbedHandler(
-                  "iframe[id='JotFormIFrame-241102194717450'",
-                  "https://form.jotform.com/"
-                );
-              </script> -->
             </div>
           </div>
         </div>
@@ -362,20 +354,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Recaptcha v3 -->
-
-    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Le65sgpAAAAAIowm5xB3XudUvGcev-pe5DPU4Ja"></script>
-<script>
-    grecaptcha.ready(function () {
-        grecaptcha.execute('6Le65sgpAAAAAIowm5xB3XudUvGcev-pe5DPU4Ja', {
-                action: 'contact'
-            })
-            .then(function (token) {
-                recaptchaResponse.value = token;
-            });
-    });
-    
-</script> -->
     <script>
       $(document).ready(function () {
         function hideLoader() {
@@ -384,6 +362,16 @@
         }
         $(window).on("load", function () {
           hideLoader(); // Call the hideLoader function
+        });
+
+        // Function to close the modal
+        function closeModal() {
+          $("#thankYouModal").fadeOut(300); // Remove 'open' class to hide the modal
+        }
+
+        // Optional: Close modal when the 'Close' button is clicked
+        $("#thankYouModal .close-btn").on("click", function () {
+          closeModal(); // Close the modal
         });
       });
     </script>
@@ -430,19 +418,6 @@
               result.style.display = "none";
             }, 3000);
           });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        // Function to close the modal
-        function closeModal() {
-          $("#thankYouModal").fadeOut(300); // Remove 'open' class to hide the modal
-        }
-
-        // Optional: Close modal when the 'Close' button is clicked
-        $("#thankYouModal .close-btn").on("click", function () {
-          closeModal(); // Close the modal
-        });
       });
     </script>
   </body>

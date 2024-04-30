@@ -1666,10 +1666,6 @@
         $(window).on("load", function () {
           hideLoader(); // Call the hideLoader function
         });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
         $(".home-testimonials").slick({
           infinite: true,
           speed: 500,
@@ -1703,6 +1699,16 @@
         });
         $("#sidr a").on("click", function () {
           $.sidr("close", "sidr"); // Close the Sidr menu
+        });
+
+        // Function to close the modal
+        function closeModal() {
+          $("#thankYouModal").fadeOut(300); // Remove 'open' class to hide the modal
+        }
+
+        // Optional: Close modal when the 'Close' button is clicked
+        $("#thankYouModal .close-btn").on("click", function () {
+          closeModal(); // Close the modal
         });
       });
 
@@ -1788,19 +1794,6 @@
               result.style.display = "none";
             }, 3000);
           });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        // Function to close the modal
-        function closeModal() {
-          $("#thankYouModal").fadeOut(300); // Remove 'open' class to hide the modal
-        }
-
-        // Optional: Close modal when the 'Close' button is clicked
-        $("#thankYouModal .close-btn").on("click", function () {
-          closeModal(); // Close the modal
-        });
       });
     </script>
   </body>
