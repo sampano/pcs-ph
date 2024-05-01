@@ -13841,7 +13841,7 @@ a.nav-item-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999; /* Ensure it's on top of other content */
+  z-index: 100000; /* Ensure it's on top of other content */
 }
 
 .loader-gif {
@@ -13856,7 +13856,7 @@ a.nav-item-title {
   width: 100%;
   height: 3000%;
   background: #fff;
-  z-index: 99;
+  z-index: 10000;
 }
 
 @keyframes shake {
