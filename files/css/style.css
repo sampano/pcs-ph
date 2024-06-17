@@ -3368,6 +3368,7 @@ blockquote {
   align-items: flex-start;
   padding-top: 80px;
   padding-bottom: 80px;
+  border-top: 1px solid #fff;
 }
 
 .footer-bottom-wrap {
